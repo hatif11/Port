@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body{
+            background-color: #3f5b751a;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0px;
+            list-style: none;
+            padding: 20px;
+            font-size: 20px;
+        }
+
+        ul li {
+            list-style: none;
+            padding: 20px;
+            font-size: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        ul li:hover {
+            list-style: none;
+            padding: 20px;
+            background-color: rgba(250, 235, 215, 0.11);
+            border-radius: 40px;
+        }
+
+        #png {
+            margin-right: 20px;
+            cursor: pointer;
+        }
+
+        .copyright-symbol {
+            color: rgb(99, 61, 5);
+            cursor: pointer;
+        }
+
+        .pp {
+            display: flex;
+            align-items: center;
+            margin: 0%;
+            background-color: rgb(7, 33, 56);
+        }
+
+        .image-section {
+            margin-right: 20px;
+        }
+
+        .text-section {
+            flex: 1;
+            margin-left: 20px;
+            color: rgb(255, 255, 255);
+
+        }
+
+        .image-section img {
+            width: 500px;
+            height: 500px;
+        }
+
+        #skil {
+            margin: 0px;
+            background-color: rgb(180, 175, 175);
+        }
+
+        th {
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container-fluid bg-secondary">
+        <h1 class="display-1 bg-secondary " style="text-align: center;">Hatif<sup>,</sup>s Port Folio</h1>
+        <nav style="margin-bottom: 0px;" class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+            <ul>
+                <img id="png"
+                    src="data:image/jpeg;base64,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"
+                    height="50px" width="55px">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Features</a></li>
+                <form style="margin-left: 590px;" class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-secondary" type="submit">Search</button>
+                </form>
+            </ul>
+        </nav>
+        <hr style="margin-bottom: 0%;">
+    </header>
+    <main style="margin-bottom: 0%;" class="container-fluid bg-secondary">
+        <div class="container-fluid pp">
+            <div class="image-section">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ30Pjq8ZNnAWTxe2bc7HyMVCN65P3cclCZ1A&s"
+                    alt="Description of the image">
+            </div>
+            <div class="text-section">
+                <h1 style="text-decoration: underline;">Introduction</h1>
+                <p>Hello! I<sup>,</sup>m Hatif Mehdi, a passionate web developer with begning of experience in creating
+                    dynamic and
+                    engaging web applications. My journey in web development began with a fascination for coding and
+                    design, and it has grown into a commitment to delivering high-quality digital experiences.<br>
+
+                    I specialize in full-stack development, using technologies like HTML, CSS, JavaScript. My goal is to
+                    combine functionality with aesthetic appeal, ensuring that every website not only looks great but
+                    also performs seamlessly.<br>
+
+                    Collaboration is key in my approach; I love working closely with clients to understand their unique
+                    needs and transform their visions into reality. Whether it<sup>,</sup>s developing a sleek landing
+                    page, a
+                    robust e-commerce site, or a custom web application, I thrive on solving complex challenges through
+                    innovative solutions.<br>
+
+                    When I'm not coding, you can find me exploring the latest web trends, contributing to open-source
+                    projects, or sharing my knowledge with the community. Feel free to browse my portfolio to see my
+                    latest projects, and let<sup>,</sup>s connect to discuss how I can help bring your ideas to
+                    life!"<br>
+
+                    This is my First Port Folio website<br>
+                    I really Appreciate and welcome you to my website<br>
+                    Thanks for visiting my website <br>
+                    So Let see and enjoy my web tour<br>
+                </p>
+            </div>
+        </div>
+        <div id="skil">
+            <h1 style="text-decoration: underline;">Skills</h1>
+
+            <table>
+                <tr>
+                    <th>HTML</th>
+                    <th>CSS</th>
+                    <th>JavaScript</th>
+                    <th>bootstrap</th>
+                    <th>Phython</th>
+                    <th>Java</th>
+                </tr>
+            </table>
+            <p style="padding: 70px;">I am a passionate web developer with expertise in a variety of technologies. My
+                proficiency in HTML and
+                CSS allows me to create clean, responsive layouts that provide excellent user experiences. I have a
+                solid foundation in JavaScript, enabling me to implement interactive features and dynamic content on
+                websites. Additionally, I am skilled in using frameworks like React, which enhances my ability to build
+                modern, single-page applications efficiently. I am also familiar with version control systems like Git,
+                allowing for effective collaboration on projects. My experience with APIs enables me to integrate
+                third-party services seamlessly, while my knowledge of basic back-end technologies ensures I can
+                contribute to full-stack development. Overall, I am dedicated to continuous learning and staying updated
+                with the latest industry trends to enhance my skills further.</p>
+         
+        </div>
+       <p style="text-align: center; color: white;" > <a href="https://www.youtube.com/">click here</a> and search for coding</p>
+        <hr>
+    </main>
+    <footer style="background-color: #d7d1c6; margin: 0%; font-size: large;">
+        <p style="text-align: center; "><span class="copyright-symbol">&copy;</span> copy right reserved</p>
+        <hr style="margin-bottom: 0%;">
+    </footer>
+</body>
+
+</html>
